@@ -11,4 +11,4 @@ EXPOSE 5000
 COPY entrypoint.sh /usr/local/bin/
 RUN ln -s usr/local/bin/entrypoint.sh
 ENTRYPOINT ["entrypoint.sh"]
-CMD ["app.py"]
+CMD ["python app.py"]

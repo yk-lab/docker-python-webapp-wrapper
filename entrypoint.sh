@@ -7,15 +7,7 @@ if [ -r /web ]; then
   else
     echo "Warning: not find requirements.txt!";
   fi
-  
-  if [ -r $1 ]; then
-    python $1
-  else
-    echo "Error: not find $1!";
-    ls
-    ls /web
-  fi
+  $1 $2
 else
   echo "Error: not find /web!";
 fi
-
