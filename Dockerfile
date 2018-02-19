@@ -1,8 +1,8 @@
-FROM python:3.5
+FROM python:3.6
 
 ARG project_dir=/web/
 
-RUN apt update -y && apt upgrade -y && apt install -y mariadb-client
+RUN apt update -y && apt upgrade -y && apt install -y mariadb-client postgresql-client
 
 WORKDIR $project_dir
 VOLUME ["/web"]
